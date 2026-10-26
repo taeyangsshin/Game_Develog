@@ -1,26 +1,31 @@
-# GitHub 업로드 안내
+# GitHub 문서 수정·업로드 안내
 
-## 압축 파일 풀기
-메일의 Game_Develog-pet-grooming.zip을 다운로드하고 압축을 풉니다.
-ZIP 자체가 아니라 압축을 푼 안쪽 파일과 폴더를 업로드합니다.
+현재 문서는 이미 GitHub에 올라와 있습니다. 이전에 전달한 Game_Develog-pet-grooming.zip은 초기 자료이므로 최신 저장소 전체에 덮어쓰지 않습니다.
 
-## 업로드
-1. GitHub에서 taeyangsshin/Game_Develog 저장소를 엽니다.
-2. 저장소의 Add file → Upload files를 선택합니다.
-3. 압축을 푼 폴더 안의 README.md, planning 폴더, pet-grooming 폴더, UPLOAD_GUIDE.md를 업로드합니다.
-4. 변경 메시지에 'docs: 펫 미용 게임 개발 계획과 일지 추가'를 적고 Commit changes로 저장합니다.
-5. 저장소 첫 화면에서 개발 단계와 날짜별 일지 링크가 열리는지 확인합니다.
+## 기존 문서 수정
 
-## 폴더 위치
-저장소 최상위에 README.md, planning, pet-grooming이 보이도록 배치합니다.
-압축 파일 이름의 폴더가 한 겹 더 들어가지 않게 확인합니다.
+1. 저장소에서 수정할 파일을 열고 Edit this file을 선택합니다.
+2. 기존 내용을 확인한 뒤 필요한 부분을 수정합니다.
+3. 변경 내용을 설명하는 커밋 메시지로 저장합니다.
+4. 저장된 본문과 문서 링크가 제대로 열리는지 확인합니다.
 
-## 기존 README
-이 묶음의 README.md는 게임 개발 기록의 목차입니다.
-기존 README에 추가한 내용이 있다면 해당 내용을 보존하거나 합친 뒤 업로드하세요.
+## 새 파일 추가
 
-## 매번 일지를 쓰는 방법
-pet-grooming/devlogs/TEMPLATE.md를 복사하고 실제 작업 날짜로 파일 이름을 바꿉니다.
-목표뿐 아니라 실제 작업, 문제 해결, 테스트와 다음 작업을 기록합니다.
-새 일지 링크를 pet-grooming/README.md에 추가하면 찾기 쉽습니다.
+Add file → Create new file에서 게임별 경로를 포함한 파일명을 입력합니다.
+예: relic-game/devlogs/2026-10-27.md. 같은 날짜의 파일이 이미 있다면 그 파일에 추가 기록합니다.
+여러 파일을 업로드할 때는 Upload files를 사용하고, 미리보기에서 최상위에 불필요한 압축파일 이름 폴더가 생기지 않았는지 확인합니다.
+기존 파일과 이름이 같으면 내용을 비교하고 최신 변경을 보존합니다.
 
+## 폴더 구성
+
+- README.md: 전체 프로젝트 목차와 현재 작업 상태.
+- planning/: 공통 아이디어 검토 기록.
+- pet-grooming/: 반려동물 미용 게임 소개·프레임워크·계획·조사·일지.
+- relic-game/: 유물 게임 소개·상세 스토리·일지.
+- 각 게임의 devlogs/: 날짜별 기록.
+
+## 일지와 목차
+
+[개발 일지 양식](pet-grooming/devlogs/TEMPLATE.md)을 복사해 해당 게임의 devlogs 폴더에 실제 날짜로 저장합니다.
+계획만 작성했다면 게임 구현이나 실행 테스트까지 완료했다고 적지 않습니다.
+새 문서 링크는 해당 게임의 README에, 주요 문서 링크는 [메인 README](README.md)에도 추가합니다.
